@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamFormsFirebaseAuth.Features.Login.LoginPage">
+
+
+    <ScrollView>
+        <StackLayout>
+
+
+
+            <Frame BackgroundColor="Black" Padding="24" CornerRadius="0">
+                <StackLayout>
+                    <Frame Margin="10"
+       BorderColor="Black"
+       CornerRadius="50"
+       HeightRequest="60"
+       WidthRequest="60"
+       IsClippedToBounds="True"
+       HorizontalOptions="Center"
+       VerticalOptions="Center">
+                        <Image Source="@drawable/sdis"
+         Aspect="AspectFill"
+         Margin="-20"
+         HeightRequest="100"
+         WidthRequest="100" />
+                    </Frame>
+
+
+
+                    <StackLayout >
+
+
+                        <StackLayout  Margin = " 10 " >
+                            <Label  Text = " Accueil "  TextColor = "White"  HorizontalOptions = " CenterAndExpand "  FontAttributes = "Bold" FontSize="Title"/>
+                        </StackLayout>
+
+                        <StackLayout  Padding = " 0 "  Margin = " 15,10 " >
+
+                            <Frame  BackgroundColor = " Transparent "  BorderColor = " DarkGray " HeightRequest = " 75 "  WidthRequest = " 75 "  Padding = " 0 "  HorizontalOptions = " FillAndExpand "  CornerRadius = " 30 " >
+                                <StackLayout  Orientation = " Horizontal " >
+
+                                    <Image Source=" https://www.findool.com/images/avatars/avatar.png " Aspect = " AspectFill " Margin = " 0 "  />
+
+
+
+                                    <Entry x:Name="newLogin" Placeholder = "Email" PlaceholderColor="White" TextColor = "Red"  FontAttributes = " None "  HorizontalOptions = " FillAndExpand "  Margin = " 0,0,20,0 " Text="{Binding Email}"/>
+                                </StackLayout>
+                            </Frame>
+
+                            <Frame  BackgroundColor = "Transparent"  BorderColor = " DarkGray "  Margin = " 0,15,0,0 " HeightRequest = " 75 "  WidthRequest = " 75 "  Padding = " 0 "  HorizontalOptions = " FillAndExpand "  CornerRadius = " 30 " >
+                                <StackLayout  Orientation = " Horizontal ">
+                                    <Image Source="  https://images.all-free-download.com/images/graphicthumb/lock_icon_6813906.jpg" Aspect = " AspectFill " Margin = " 0 "  />
+
+
+
+                                    <Entry x:Name="newPassword" Placeholder = "Mot de passe" PlaceholderColor="White"  IsPassword = " True "  TextColor = "Red"  FontAttributes = " None "  HorizontalOptions = " FillAndExpand "  Margin = " 0,0,20,0 " Text="{Binding Password}"/>
+                                </StackLayout>
+                            </Frame>
+
+                            <StackLayout></StackLayout>
+
+                            <Button  Text = " CONNECTER "  BackgroundColor = "Red"  TextColor = "White" HeightRequest = " 45 "  WidthRequest = " 45 " CornerRadius = " 30 "  Command="{Binding SignInCommand}"
+                    Style="{StaticResource PrimaryButton}"/>
+
+
+                            <StackLayout>
+                            </StackLayout>
+
+                            <StackLayout>
+
+                            </StackLayout>
+
+                            <StackLayout>
+
+                            </StackLayout>
+                            <StackLayout>
+
+                            </StackLayout>
+                            <StackLayout>
+
+                            </StackLayout>
+                            <StackLayout>
+
+
+                            </StackLayout>
+                            <StackLayout>
+
+                            </StackLayout>
+
+                            <StackLayout>
+
+                            </StackLayout>
+
+                            <StackLayout>
+
+                            </StackLayout>
+
+
+                            <StackLayout  Margin = " 0,25,0,0 "  Padding = " 0 " >
+
+                                <BoxView  BackgroundColor = " DarkGray "  HeightRequest = " 1 "  WidthRequest = " 150 "   HorizontalOptions = " Center "  VerticalOptions = " Center " />
+                                <Frame  BackgroundColor = " White "  HeightRequest = " 45 "  WidthRequest = " 100 "  CornerRadius = " 45 "  HasShadow = " False "  BorderColor = " DarkGray "  Margin = " 0 "  HorizontalOptions = " Center "  Padding = " 0 ">
+                                    <Label  Text = " Suivez nous : "  TextColor = " DarkGray "  FontSize = " Small "  VerticalTextAlignment = " Center "  HorizontalTextAlignment = " Center " />
+                                </Frame>
+                            </StackLayout >
+
+                            <StackLayout  Margin = " 0,25 "  Orientation = " Horizontal "  HorizontalOptions = " CenterAndExpand " >
+
+                                <Frame  BackgroundColor = " White "  HeightRequest = " 45 "  WidthRequest = " 45 "  CornerRadius = " 45 "  HasShadow = " False "  BorderColor = " DarkGray "  Margin = " 0 "  HorizontalOptions = " Center "  Padding = " 0 " >
+
+                                    <ImageButton Source="https://logos-marques.com/wp-content/uploads/2020/04/Facebook-Embl%C3%A8me.jpg " Aspect = " AspectFill " Margin = " 0 "  Clicked="OnImageButtonFacebookClicked"/>
+
+                                </Frame>
+
+                                <Frame  BackgroundColor = " White "  HeightRequest = " 45 "  WidthRequest = " 45 "  CornerRadius = " 45 "  HasShadow = " False "  BorderColor = " DarkGray "  Margin = " 0 "  HorizontalOptions = " Center "  Padding = " 0 " >
+
+                                    <ImageButton Source="https://www.chalearning.ca/wp-content/uploads/2021/03/pnglot.com-twitter-bird-logo-png-139932.png " Aspect = " AspectFill " Margin = " 0 "  Clicked="OnImageButtonTwitterClicked"/>
+
+                                </Frame>
+
+                                <Frame  BackgroundColor = " White "  HeightRequest = " 45 "  WidthRequest = " 45 "  CornerRadius = " 45 "  HasShadow = " False "  BorderColor = " DarkGray "  Margin = " 0 "  HorizontalOptions = " Center "  Padding = " 0 " >
+
+                                    <ImageButton Source=" https://blog.hubspot.com/hubfs/image8-2.jpg" Aspect = " AspectFill " Margin = " 0 " Clicked="OnImageButtonGoogleClicked" />
+
+                                </Frame>
+
+
+                                <Frame  BackgroundColor = " White "  HeightRequest = " 45 "  WidthRequest = " 45 "  CornerRadius = " 45 "  HasShadow = " False "  BorderColor = " DarkGray "  Margin = " 0 "  HorizontalOptions = " Center "  Padding = " 0 " >
+
+                                    <ImageButton Source="https://www.webstickersmuraux.com/fr/img/asfs864-jpg/folder/products-listado-merchanthover/autocollants-logo-instagram.jpg" Aspect = " AspectFill " Margin = " 0 " Clicked="OnImageButtonInstagramClicked" />
+
+                                </Frame>
+
+
+
+                            </StackLayout>
+
+                        </StackLayout>
+
+
+                    </StackLayout>
+
+
+
+                </StackLayout>
+
+            </Frame>
+        </StackLayout>
+
+    </ScrollView>
+</ContentPage>

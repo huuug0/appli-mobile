@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:login="clr-namespace:XamFormsFirebaseAuth.Features.Login"
+       xmlns:home="clr-namespace:XamFormsFirebaseAuth.Features.Home"
+       xmlns:local="clr-namespace:XamFormsFirebaseAuth.Features.Shell"
+       x:Class="XamFormsFirebaseAuth.Features.Shell.AppShell">
+
+    <Shell.FlyoutHeader>
+        <local:FlyoutHeader />
+    </Shell.FlyoutHeader>
+
+    <FlyoutItem Title="Home">
+        <ShellContent ContentTemplate="{DataTemplate login:LoginPage}" />
+    </FlyoutItem>
+
+    <MenuItem Text="Sign Out" Command="{Binding SignOutCommand}" />
+
+    <ShellContent Route="HomePage"
+                   ContentTemplate="{DataTemplate home:HomePage}" />
+
+    <ShellContent Route="EspacePage"
+                   ContentTemplate="{DataTemplate login:EspacePage}" />
+
+    <ShellContent Route="LoginPage"
+                   Shell.FlyoutBehavior="Disabled"
+                   ContentTemplate="{DataTemplate login:LoginPage}" />
+
+ 
+
+</Shell>

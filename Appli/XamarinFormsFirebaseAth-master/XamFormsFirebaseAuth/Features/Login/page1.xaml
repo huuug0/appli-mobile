@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamFormsFirebaseAuth.Features.Login.page1">
+
+    <StackLayout>
+
+        <ScrollView>
+
+       
+
+            <Frame BackgroundColor="Black" Padding="24" CornerRadius="0">
+                <StackLayout>
+                    <Frame Margin="10"
+       BorderColor="Black"
+       CornerRadius="50"
+       HeightRequest="60"
+       WidthRequest="60"
+       IsClippedToBounds="True"
+       HorizontalOptions="Center"
+       VerticalOptions="Center">
+                        <Image Source="@drawable/sdis"
+         Aspect="AspectFill"
+         Margin="-20"
+         HeightRequest="100"
+         WidthRequest="100" />
+                    </Frame>
+
+                    <StackLayout>
+
+                    <Label Text="Préparation Stage Tutorat en CIS" HorizontalTextAlignment="Center" TextColor="Red" FontSize="25"/>
+
+
+                    <TableView Intent="Settings" HasUnevenRows="True">
+                            
+                        
+                        <TableSection Title="" TextColor="Red">
+                                <ViewCell>
+                                    <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                                        <Label Text="Thème" FontSize="20" TextColor="Black"/>
+                                        <Label Text="Date" FontSize="20" TextColor="Black"
+                                 HorizontalOptions="EndAndExpand"/>
+                                    </StackLayout>
+                                </ViewCell>
+                                <ViewCell>
+                                    <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                                        <Label Text="Environnement numérique ENASIS" FontSize="20" FontAttributes="Bold" TextColor="Black"
+                                HorizontalOptions="CenterAndExpand"/>
+                                    </StackLayout>
+                                </ViewCell>
+                                <ViewCell>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Modalités de connexion, accès espace FOAD de l'apprenant" TextColor="White" FontSize="15" VerticalOptions="Center"/>
+                                    <DatePicker x:Name="newModalitéConnexion" TextColor="White"
+                            HorizontalOptions="EndAndExpand"/>
+                                    </StackLayout>
+                                </ViewCell>
+                                <ViewCell>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Accès au Réferenciel technique SUAP" FontSize="15" TextColor="White" VerticalOptions="Center"/>
+                                        <DatePicker x:Name="newReferencielTechnique" TextColor="White"
+                            HorizontalOptions="EndAndExpand"/>
+                                    </StackLayout>
+                                </ViewCell>
+                                <ViewCell Height="50">
+                                    <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                                        <Label Text="Capacités et modalités d'utilisation des matériels et équipements du VSAV " FontSize="19" TextColor="Black" FontAttributes="Bold"
+                                HorizontalOptions="Center"/>
+                                    </StackLayout>
+                                </ViewCell>
+                                <ViewCell>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Fiche Matériel VSAV" FontSize="15" TextColor="White" VerticalOptions="Center"/>
+                                    <DatePicker x:Name="newFicheMateriel" TextColor="White"
+                            HorizontalOptions="EndAndExpand"/>
+                                    </StackLayout>
+                                </ViewCell>
+                                <ViewCell>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Maitrise de l'ensemble des matériels de la VSAV" FontSize="15" VerticalOptions="Center" TextColor="White"/>
+                                    <DatePicker x:Name="newMaitriseMateriel" TextColor="White"
+                            HorizontalOptions="EndAndExpand"/>
+                                    </StackLayout>
+                                </ViewCell>
+                                <ViewCell>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Procédure de Désinfection" FontSize="15" VerticalOptions="Center" TextColor="White"/>
+                                    <DatePicker x:Name="newProcedureDesinfection" TextColor="White"
+                            HorizontalOptions="EndAndExpand"/>
+                                    </StackLayout>
+                                </ViewCell>
+                                <ViewCell Height="50">
+                                <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                                        <Label Text="Système d'information et de Communication" FontSize="19" FontAttributes="Bold" TextColor="Black"
+                                HorizontalOptions="CenterAndExpand" />
+                                    </StackLayout>
+                                </ViewCell>
+                                <ViewCell>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Role du stationnaire" FontSize="15" VerticalOptions="Center" TextColor="White"/>
+                                    <DatePicker x:Name="newRoleStationnaire" TextColor="White"
+                            HorizontalOptions="EndAndExpand"/>
+                                    </StackLayout>
+                                </ViewCell>
+                                <ViewCell>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Maitrise des terminaux d'alerte du CIS" FontSize="15" VerticalOptions="Center" TextColor="White"/>
+                                    <DatePicker x:Name="newMaitriseTerminaux" TextColor="White"
+                            HorizontalOptions="EndAndExpand"/>
+                                    </StackLayout>
+                                </ViewCell>
+                                <ViewCell>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Maitrise du bip d'alerte" FontSize="15" VerticalOptions="Center" TextColor="White"/>
+                                    <DatePicker x:Name="newMaitriseBip" TextColor="White"
+                            HorizontalOptions="EndAndExpand"/>
+                                    </StackLayout>
+                                </ViewCell>
+                                <ViewCell>
+                                    <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                                        <Label Text="Equipement de Protection Individuelle" FontSize="20" FontAttributes="Bold" TextColor="Black"
+                                HorizontalOptions="CenterAndExpand"/>
+                                    </StackLayout>
+                                </ViewCell>
+                                <ViewCell>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Connaissances et utilisation des EPI individuelle" FontSize="15" VerticalOptions="Center" TextColor="White"/>
+                                    <DatePicker x:Name="newConnaissanceEPI" TextColor="White"
+                            HorizontalOptions="EndAndExpand"/>
+                                    </StackLayout>
+                                </ViewCell>
+                                <ViewCell>
+                                    <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                                        <Label Text="Activités d'équipier prompt-secours" FontSize="20" FontAttributes="Bold" TextColor="Black"
+                                HorizontalOptions="CenterAndExpand"/>
+                                    </StackLayout>
+                                </ViewCell>
+                                <ViewCell>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Maitrise des gestes de secours liés aux PSC1" FontSize="15" VerticalOptions="Center" TextColor="White"/>
+                                    <DatePicker x:Name="newGesteSecours" TextColor="White"
+                            HorizontalOptions="EndAndExpand"/>
+                                    </StackLayout>
+
+                                </ViewCell>
+                                
+                            </TableSection>
+                        </TableView>
+                        <Button Clicked="OnNextPageButtonClicked"  Text = " Suivant "  BackgroundColor = "White"  TextColor = "Black" HeightRequest = " 45 "  WidthRequest = " 45 " CornerRadius = " 30 " />
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+           
+    </ScrollView>
+        
+        
+    </StackLayout>
+</ContentPage>

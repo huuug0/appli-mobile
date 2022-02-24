@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             
+             xmlns:m="clr-namespace:Shared"
+             xmlns:vm="clr-namespace:RealtimeDBExample.ViewModels" x:DataType="vm:MainPageViewModel"
+             x:Class="RealtimeDBExample.MainPage">
+
+    <ContentPage.BindingContext>
+        <vm:MainPageViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+
+
+                <Frame BackgroundColor="Black" Padding="24" CornerRadius="0">
+                    <StackLayout>
+                        <Frame Margin="10"
+       BorderColor="Black"
+       CornerRadius="50"
+       HeightRequest="60"
+       WidthRequest="60"
+       IsClippedToBounds="True"
+       HorizontalOptions="Center"
+       VerticalOptions="Center">
+                            <Image Source="@drawable/sdis"
+         Aspect="AspectFill"
+         Margin="-20"
+         HeightRequest="100"
+         WidthRequest="100" />
+                        </Frame>
+               
+            </StackLayout>
+
+                </Frame>
+
+                <!--Enter a new Description-->
+                        <Grid Margin="5" BackgroundColor="Black">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                    <SearchBar x:Name="search1" Placeholder="Search" PlaceholderColor="Black" TextColor="Black" BackgroundColor="White" />
+
+                        </Grid>
+
+                        <!--List of Descriptions from Firebase-->
+                        <ListView x:Name="listview1" ItemsSource="{Binding Items,Mode=TwoWay}" RowHeight="50" SelectedItem="{Binding SelectedKey,Mode=TwoWay}" IsPullToRefreshEnabled="True" RefreshCommand="{Binding RefreshListCommand}" IsRefreshing="{Binding IsRefreshing}" BackgroundColor="Black">
+                            <ListView.ItemTemplate>
+                                <DataTemplate x:DataType="m:MyDatabaseRecord">
+                                    <ViewCell>
+                                        <StackLayout>
+                                            <Grid Margin="5">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="Auto"/>
+                                                    <RowDefinition Height="Auto"/>
+                                                </Grid.RowDefinitions>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                </Grid.ColumnDefinitions>
+
+
+
+
+                                        <Label Text="{Binding Prenom}" FontSize="Title" Grid.Row="0" Grid.Column="0" TextColor="White"/>
+
+
+                                        <Label Text="{Binding Nom}" FontSize="Title" Grid.Row="0" Grid.Column="2" TextColor="White"/>
+
+                                        <Button Clicked="Button_Clicked"  Text = " Voir la fiche "  BackgroundColor = "White"  TextColor = "Black" HeightRequest = " 45 "  WidthRequest = " 45 " CornerRadius = " 30 " Grid.Row="0" Grid.Column="3" />
+
+                                    </Grid>
+                                        </StackLayout>
+                                    </ViewCell>
+                       
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </StackLayout>
+                    
+                
+        </ScrollView>
+    </ContentPage.Content>
+
+
+</ContentPage>

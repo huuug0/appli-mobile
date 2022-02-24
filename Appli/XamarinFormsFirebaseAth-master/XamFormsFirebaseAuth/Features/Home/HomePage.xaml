@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+                 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+                 x:Class="XamFormsFirebaseAuth.Features.Home.HomePage"
+                  xmlns:local="clr-namespace:XamFormsFirebaseAuth.Features.Home" x:DataType="local:HomePage">
+
+
+
+    <ScrollView VerticalOptions="FillAndExpand">
+
+           
+
+
+
+
+
+                <!--haut de page-->
+
+                <Frame BackgroundColor="Black" Padding="24" CornerRadius="0">
+                    <StackLayout>
+                        <Frame Margin="10"
+       BorderColor="Black"
+       CornerRadius="50"
+       HeightRequest="60"
+       WidthRequest="60"
+       IsClippedToBounds="True"
+       HorizontalOptions="Center"
+       VerticalOptions="Center">
+                            <Image Source="@drawable/sdis"
+         Aspect="AspectFill"
+         Margin="-20"
+         HeightRequest="100"
+         WidthRequest="100" />
+                        </Frame>
+
+                        <Label Text="Livret Individuel de Suivi Pedagogique" HorizontalTextAlignment="Center" TextColor="Red" FontSize="25"/>
+
+
+                        <Frame  BackgroundColor = " Transparent "  BorderColor = " DarkGray " HeightRequest = " 75 "  WidthRequest = " 20 "  Padding = " 0 "  HorizontalOptions = " FillAndExpand "  CornerRadius = " 30 " >
+                            <Entry x:Name="newUser" Placeholder="Nom" PlaceholderColor="White" HorizontalTextAlignment="Start" TextColor="White"/>
+                   
+                        </Frame>
+
+                    
+
+                    <Frame  BackgroundColor = " Transparent "  BorderColor = " DarkGray " HeightRequest = " 75 "  WidthRequest = " 20 "  Padding = " 0 "  HorizontalOptions = " FillAndExpand "  CornerRadius = " 30 " >
+                            <Entry x:Name="newPrenom" Placeholder="Prenom"  PlaceholderColor="White" HorizontalTextAlignment="Start" TextColor="White"/>
+                </Frame>
+
+               
+
+                    <Frame  BackgroundColor = " Transparent "  BorderColor = " DarkGray " HeightRequest = " 75 "  WidthRequest = " 20 "  Padding = " 0 "  HorizontalOptions = " FillAndExpand "  CornerRadius = " 30 " >
+                        <Entry x:Name="newEmail" Placeholder="Email" PlaceholderColor="White" HorizontalTextAlignment="Start" TextColor="White"/>
+                    </Frame>
+
+                    <Label Text="Date de Naissance :" FontSize="Title" HorizontalTextAlignment="Center" Padding="30,10,30,10" TextColor="White"/>
+                        <DatePicker  x:Name="newDateNaissance" TextColor="White" />
+
+
+                        <Frame  BackgroundColor = " Transparent "  BorderColor = " DarkGray " HeightRequest = " 75 "  WidthRequest = " 75 "  Padding = " 0 "  HorizontalOptions = " FillAndExpand "  CornerRadius = " 30 " >
+                            <Entry x:Name="newGrade" Placeholder="Grade" PlaceholderColor="White" TextColor="White"/>
+                        </Frame>
+
+                        <Frame  BackgroundColor = " Transparent "  BorderColor = " DarkGray " HeightRequest = " 75 "  WidthRequest = " 75 "  Padding = " 0 "   HorizontalOptions = " FillAndExpand "  CornerRadius = " 30 " >
+
+                            <Entry x:Name="newCIS" Placeholder="CIS" PlaceholderColor="White" TextColor="White"/>
+                        </Frame>
+
+                        <Label Text="Date de Recrutement :" FontSize="Title" HorizontalTextAlignment="Center" Padding="30,10,30,10" TextColor="White"/>
+                        <DatePicker x:Name="newDateRecrutement" TextColor="White"/>
+                        <Label Text="Aptitude Medicale SUAP :" FontSize="Title" HorizontalTextAlignment="Center" Padding="30,10,30,10" TextColor="White"/>
+                        <Frame  BackgroundColor = " Transparent "  BorderColor = " DarkGray " HeightRequest = " 75 "  WidthRequest = " 20 "  Padding = " 0 "  HorizontalOptions = " FillAndExpand "  CornerRadius = " 30 " >
+                            <Picker x:Name="newAptitudeMedicale" Title="Selectionnez" TitleColor="White" TextColor="White">
+                                <Picker.ItemsSource>
+                                    <x:Array Type="{x:Type x:String}">
+                                        <x:String>oui</x:String>
+                                        <x:String>non</x:String>
+                                    </x:Array>
+                                </Picker.ItemsSource>
+                            </Picker >
+                        </Frame>
+
+
+
+
+                        <Label Text="Observations :" FontSize="Title" HorizontalTextAlignment="Center" Padding="30,10,30,10" TextColor="White"/>
+                        <Frame  BackgroundColor = " Transparent "  BorderColor = " DarkGray " HeightRequest = " 75 "  WidthRequest = " 50 "  Padding = " 0 "  HorizontalOptions = " FillAndExpand "  CornerRadius = " 30 " >
+                            <Editor x:Name="newObservations" Placeholder="Notez vos Observations" Margin="0,0,20,0 " PlaceholderColor="White" TextColor="White"/>
+                        </Frame>
+                        <!--bas de page-->
+
+                <StackLayout>
+                    
+                    
+                </StackLayout>
+                        
+                        <Button Clicked="OnNextPageButtonClicked"  Text = " Suivant "  BackgroundColor = "White"  TextColor = "Black" HeightRequest = " 45 "  WidthRequest = " 45 " CornerRadius = " 30 " />
+
+
+
+
+                    </StackLayout>
+                </Frame>
+
+  
+        </ScrollView>
+  
+
+</ContentPage>

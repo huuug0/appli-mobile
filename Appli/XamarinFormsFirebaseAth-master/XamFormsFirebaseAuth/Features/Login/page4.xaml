@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamFormsFirebaseAuth.Features.Login.page4">
+
+
+
+    <ScrollView VerticalOptions="FillAndExpand">
+
+
+        <Frame BackgroundColor="Black" Padding="24" CornerRadius="0">
+            <StackLayout>
+                <Frame Margin="10"
+       BorderColor="Black"
+       CornerRadius="50"
+       HeightRequest="60"
+       WidthRequest="60"
+       IsClippedToBounds="True"
+       HorizontalOptions="Center"
+       VerticalOptions="Center">
+                    <Image Source="@drawable/sdis"
+         Aspect="AspectFill"
+         Margin="-20"
+         HeightRequest="100"
+         WidthRequest="100" />
+                </Frame>
+
+
+                <StackLayout>
+
+                    <!--ligne 1-->
+                    <Label Text="Tableau de suivi des compétences équipier SUAP" HorizontalTextAlignment="Center" TextColor="Red" FontSize="25"/>
+
+                    <TableView Intent="Settings" HasUnevenRows="True">
+                        <TableSection Title="" TextColor="Red" >
+
+
+
+
+                            <ViewCell Height="50">
+
+                                <StackLayout>  
+                                    <DatePicker x:Name="newDateCompetence1" TextColor="White"
+                         HorizontalOptions="Start"  />
+                                </StackLayout>
+                            </ViewCell>
+
+
+                            <ViewCell Height="50">
+
+                                <StackLayout >
+                                    <Entry x:Name="newMSP1" Placeholder="MSP" TextColor="White" PlaceholderColor="White" HorizontalOptions="FillAndExpand"
+                                    />
+                                </StackLayout>
+                            </ViewCell>
+                            <ViewCell Height="50">
+
+                                <Entry x:Name="newIntervention1" Placeholder="Intervention" TextColor="White" PlaceholderColor="White" HorizontalOptions="FillAndExpand" />
+                            </ViewCell>
+                            <ViewCell Height="50">
+
+                                <Entry x:Name="newTheme1" Placeholder="Thème" TextColor="White" PlaceholderColor="White" HorizontalOptions="FillAndExpand" HeightRequest="50"/>
+                            </ViewCell>
+                          
+
+                            <ViewCell  Height="75" >
+                                <StackLayout HorizontalOptions="CenterAndExpand" BackgroundColor="White">
+                                    <Label Text="Veiller a la securité immédiate,adaptée et permanente des intervenants, de la victime et des autres personnes" FontAttributes="Bold" FontSize="19" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" TextColor="Black"/>
+                                </StackLayout>
+                            </ViewCell>
+
+
+                            <ViewCell>
+                                
+                            <Picker x:Name="newAcquisition1" Title="Selectionnez" TextColor="White" TitleColor="White">
+                                <Picker.Items>
+                                    <x:String>acquis</x:String>
+                                    <x:String>en cours d'acquisition</x:String>
+                                    <x:String>non acquis</x:String>
+
+                                </Picker.Items>
+                            </Picker >
+
+
+                            </ViewCell>
+
+
+                            <ViewCell  Height="75">
+                                <StackLayout BackgroundColor="White">
+                                    <Label Text="S'intégrer dans la chaine du secours d'urgence aux personnes en qualité d'équipier" FontAttributes="Bold" FontSize="19" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" TextColor="Black"/>
+                                </StackLayout>
+                            </ViewCell>
+
+
+                            <ViewCell Height="50">
+                                    <Picker x:Name="newAcquisition2" Title="Selectionnez" TextColor="White" TitleColor="White">
+                                        <Picker.Items>
+                                            <x:String>acquis</x:String>
+                                            <x:String>en cours d'acquisition</x:String>
+                                            <x:String>non acquis</x:String>
+
+                                        </Picker.Items>
+                                    </Picker >
+                                  
+                            </ViewCell>
+                           
+
+                            
+
+                            <ViewCell  Height="75">
+                                <StackLayout BackgroundColor="White">
+                                    <Label Text="Réaliser un bilan conformément aux protocoles en vigueur" FontAttributes="Bold" FontSize="19" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" TextColor="Black"/>
+                                </StackLayout>
+                            </ViewCell>
+
+
+                            <ViewCell Height="50">
+                                
+                                    <Picker x:Name="newAcquisition3" Title="Selectionnez" TextColor="White" TitleColor="White">
+                                        <Picker.Items>
+                                            <x:String>acquis</x:String>
+                                            <x:String>en cours d'acquisition</x:String>
+                                            <x:String>non acquis</x:String>
+
+                                        </Picker.Items>
+                                    </Picker >
+                              
+                            </ViewCell>
+
+                            <ViewCell  Height="75">
+                                <StackLayout BackgroundColor="White">
+                                    <Label Text="Réaliser des gestes technique adaptés a l 'état d'une victime" FontAttributes="Bold" FontSize="19" VerticalOptions="CenterAndExpand" TextColor="Black" HorizontalOptions="Center"/>
+                                </StackLayout>
+                            </ViewCell>
+
+
+                            <ViewCell Height="50">
+                                    <Picker x:Name="newAcquisition4" Title="Selectionnez" TextColor="White" TitleColor="White">
+                                        <Picker.Items>
+                                            <x:String>acquis</x:String>
+                                            <x:String>en cours d'acquisition</x:String>
+                                            <x:String>non acquis</x:String>
+
+                                        </Picker.Items>
+                                    </Picker >
+                                  
+                            </ViewCell>
+                           
+
+
+                            <ViewCell  Height="75">
+                                <StackLayout BackgroundColor="White">
+                                    <Label Text="Conditionner une personne victime d'un accident traumatique du squelette" FontAttributes="Bold" FontSize="19" TextColor="Black" VerticalOptions="CenterAndExpand" HorizontalOptions="Center"/>
+                                </StackLayout>
+                            </ViewCell>
+
+
+                            <ViewCell Height="50">
+                                    <Picker x:Name="newAcquisition5" Title="Selectionnez" TextColor="White" TitleColor="White">
+                                        <Picker.Items>
+                                            <x:String>acquis</x:String>
+                                            <x:String>en cours d'acquisition</x:String>
+                                            <x:String>non acquis</x:String>
+
+                                        </Picker.Items>
+                                    </Picker >
+                                 
+                            </ViewCell>
+                          
+
+                            <ViewCell  Height="75">
+                                <StackLayout BackgroundColor="White">
+                                    <Label Text="Transporter une victime" FontAttributes="Bold" FontSize="19" TextColor="Black" VerticalOptions="CenterAndExpand" HorizontalOptions="Center"/>
+                                </StackLayout>
+                            </ViewCell>
+
+
+                            <ViewCell Height="50">
+                                    <Picker x:Name="newAcquisition6" Title="Selectionnez" TextColor="White" TitleColor="White">
+                                        <Picker.Items>
+                                            <x:String>acquis</x:String>
+                                            <x:String>en cours d'acquisition</x:String>
+                                            <x:String>non acquis</x:String>
+
+                                        </Picker.Items>
+                                    </Picker >
+                                  
+                            </ViewCell>
+                          
+
+                            <ViewCell  Height="75">
+                                <StackLayout BackgroundColor="White">
+                                    <Label Text="Veillez au respect des règles d'hygiène et d'asepsie" FontAttributes="Bold" FontSize="19" TextColor="Black" VerticalOptions="CenterAndExpand" HorizontalOptions="Center"/>
+                                </StackLayout>
+                            </ViewCell>
+
+
+                            <ViewCell Height="50">
+                                    <Picker x:Name="newAcquisition7" Title="Selectionnez" TextColor="White" TitleColor="White">
+                                        <Picker.Items>
+                                            <x:String>acquis</x:String>
+                                            <x:String>en cours d'acquisition</x:String>
+                                            <x:String>non acquis</x:String>
+
+                                        </Picker.Items>
+                                    </Picker >
+                                   
+                            </ViewCell>
+                         
+
+                            <ViewCell  Height="75">
+                                <StackLayout BackgroundColor="White">
+                                    <Label Text="S'impliquer dans son acivité" FontAttributes="Bold" FontSize="19" VerticalOptions="CenterAndExpand" TextColor="Black" HorizontalOptions="Center"/>
+                                </StackLayout>
+                            </ViewCell>
+
+
+                            <ViewCell Height="50">
+                                    <Picker x:Name="newAcquisition8" Title="Selectionnez" TextColor="White" TitleColor="White">
+                                        <Picker.Items>
+                                            <x:String>acquis</x:String>
+                                            <x:String>en cours d'acquisition</x:String>
+                                            <x:String>non acquis</x:String>
+
+                                        </Picker.Items>
+                                    </Picker >
+                             
+                            </ViewCell>
+                          
+
+
+                            <ViewCell  Height="75">
+                                <StackLayout BackgroundColor="White">
+                                    <Label Text="Agir au sein d'un collectif" FontAttributes="Bold" FontSize="19" TextColor="Black" VerticalOptions="CenterAndExpand" HorizontalOptions="Center"/>
+                                </StackLayout>
+                            </ViewCell>
+
+
+                            <ViewCell Height="50">
+                                    <Picker x:Name="newAcquisition9" Title="Selectionnez" TextColor="White" TitleColor="White">
+                                        <Picker.Items>
+                                            <x:String>acquis</x:String>
+                                            <x:String>en cours d'acquisition</x:String>
+                                            <x:String>non acquis</x:String>
+
+                                        </Picker.Items>
+                                    </Picker >
+                                 
+                            </ViewCell>
+                           
+
+                            <ViewCell  Height="75">
+                                <StackLayout BackgroundColor="White">
+                                    <Label Text="Maintenir la capacité opérationelle des équipements, véhicules et matériels" FontAttributes="Bold" TextColor="Black" FontSize="19" VerticalOptions="CenterAndExpand" HorizontalOptions="Center"/>
+                                </StackLayout>
+                            </ViewCell>
+
+
+                            <ViewCell Height="50">
+                                    <Picker x:Name="newAcquisition10" Title="Selectionnez" TextColor="White" TitleColor="White">
+                                        <Picker.Items>
+                                            <x:String>acquis</x:String>
+                                            <x:String>en cours d'acquisition</x:String>
+                                            <x:String>non acquis</x:String>
+
+                                        </Picker.Items>
+                                    </Picker >
+                                   
+                            </ViewCell>
+
+                          
+                            <ViewCell>
+
+
+                                <Editor x:Name="newPlan1" Placeholder="Plan d'action intermédiaire" TextColor="Black" BackgroundColor="White" PlaceholderColor="Black" HorizontalOptions="FillAndExpand" HeightRequest="100" VerticalOptions="Center"/>
+
+
+                            </ViewCell>
+
+                        </TableSection>
+                    </TableView>
+
+
+
+
+                    <Button Clicked="OnNextPageButtonClicked"  Text = " Suivant "  BackgroundColor = "White"  TextColor = "Black" HeightRequest = " 45 "  WidthRequest = " 45 " CornerRadius = " 30 " />
+
+
+
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+    </ScrollView>
+
+</ContentPage>

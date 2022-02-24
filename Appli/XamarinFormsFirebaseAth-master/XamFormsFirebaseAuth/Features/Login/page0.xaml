@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamFormsFirebaseAuth.Features.Login.page0">
+
+
+    <StackLayout BackgroundColor="Black">
+        <ScrollView>
+
+        <Frame BackgroundColor="Black" Padding="24" CornerRadius="0">
+        <StackLayout>
+            <Frame Margin="10"
+       BorderColor="Black"
+       CornerRadius="50"
+       HeightRequest="60"
+       WidthRequest="60"
+       IsClippedToBounds="True"
+       HorizontalOptions="Center"
+       VerticalOptions="Center">
+                <Image Source="@drawable/sdis"
+         Aspect="AspectFill"
+         Margin="-20"
+         HeightRequest="100"
+         WidthRequest="100" />
+            </Frame>
+
+
+            <TableView Intent="Settings" HasUnevenRows="True" >
+
+                    <TableSection Title="" TextColor="Red" >
+                        <ViewCell>
+
+                            <Label Text="Module Transverse Préalable a Toutes Activités" HorizontalTextAlignment="Center" TextColor="Red" FontSize="25"/>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" BackgroundColor="White" >
+                                <Label Text="Thème" FontSize="20" TextColor="Black" />
+                                <Label Text="Date" FontSize="20" TextColor="Black" HorizontalOptions="EndAndExpand"
+                                 />
+
+                            </StackLayout>
+                        </ViewCell>
+
+                        <ViewCell Height="55">
+
+
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Agir selon les règles relatives à la santé, sécurité et qualité de vie en service" FontSize="15" VerticalOptions="Center" TextColor="White" />
+                                <DatePicker x:Name="newDateReglesSanté" TextColor="White" HorizontalOptions="EndAndExpand"
+                          />
+                            </StackLayout>
+
+                        </ViewCell>
+                        <ViewCell Height="50">
+
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="S'adapter à son environnement" FontSize="15" VerticalOptions="Center" TextColor="White"/>
+                                <DatePicker  x:Name="newDateAdaptationEnvironnement" TextColor="White"
+                            HorizontalOptions="EndAndExpand"/>
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell Height="50">
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Apport Théorique SUAP" FontSize="15" TextColor="White" VerticalOptions="Center"/>
+                                <DatePicker x:Name="newDateApportTheoriqueSUAP" TextColor="White"
+                                        HorizontalOptions="EndAndExpand"/>
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell Height="50">
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Titulaire du PSC1" FontSize="15" TextColor="White" VerticalOptions="Center"/>
+                                <Picker x:Name="newPSC1" Title="Selectionnez" TextColor="White" TitleColor="White" HorizontalTextAlignment="Center">
+                                    <Picker.Items>
+                                        <x:String>oui</x:String>
+                                        <x:String>non</x:String>
+                                    </Picker.Items>
+                                </Picker >
+                                <DatePicker x:Name="newDatePSC1" TextColor="White"
+                            HorizontalOptions="EndAndExpand"/>
+
+                            </StackLayout>
+                        </ViewCell>
+                          
+
+                    </TableSection>
+
+                </TableView>
+
+
+                <Button Clicked="OnNextPageButtonClicked"  Text = " Suivant "  BackgroundColor = "White"  TextColor = "Black" HeightRequest = " 45 "  WidthRequest = " 45 " CornerRadius = " 30 " />
+
+                </StackLayout>
+
+            
+
+   
+    </Frame>
+
+        </ScrollView>
+        <StackLayout Margin="20" >
+            <Button Clicked="OnNextPageButtonClicked"  Text = " Suivant "  BackgroundColor = "White"  TextColor = "Black" HeightRequest = " 45 "  WidthRequest = " 45 " CornerRadius = " 30 " />
+
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
+
+            

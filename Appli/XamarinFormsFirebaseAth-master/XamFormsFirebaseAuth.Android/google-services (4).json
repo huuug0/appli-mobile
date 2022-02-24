@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "847356246610",
+    "firebase_url": "https://sdis-4b447-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "sdis-4b447",
+    "storage_bucket": "sdis-4b447.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:847356246610:android:adaaea50cad06d5a16fd8b",
+        "android_client_info": {
+          "package_name": "com.makanda.XamFormsFirebaseAuth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "847356246610-6t5p1v9enkn707t7d126mddun3ginkr8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBV-E59JJjnnFgkaMBkiAA1a1m1zKs_Rrw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "847356246610-6t5p1v9enkn707t7d126mddun3ginkr8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

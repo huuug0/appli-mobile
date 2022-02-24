@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamFormsFirebaseAuth.Features.Login.page5">
+
+
+    <StackLayout BackgroundColor="Black">
+    <ScrollView>
+
+                <Frame BackgroundColor="Black" Padding="24" CornerRadius="0">
+                    <StackLayout>
+                        <Frame Margin="10"
+       BorderColor="Black"
+       CornerRadius="50"
+       HeightRequest="60"
+       WidthRequest="60"
+       IsClippedToBounds="True"
+       HorizontalOptions="Center"
+       VerticalOptions="Center">
+                            <Image Source="@drawable/sdis"
+         Aspect="AspectFill"
+         Margin="-20"
+         HeightRequest="100"
+         WidthRequest="100" />
+                        </Frame>
+
+
+                        <StackLayout>
+
+                <Label Text="Plan de développement continu des compétences de l'équipe SUAP" HorizontalTextAlignment="Center" TextColor="Red" FontSize="25"/>
+
+                
+                            <TableView Intent="Settings" HasUnevenRows="True" >
+                                <TableSection Title="" TextColor="Red">
+
+                    
+                                    <ViewCell>
+                                        <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                                            
+                                          
+                                        </StackLayout>
+                                    </ViewCell>
+
+                        <ViewCell>
+
+
+                            <Editor x:Name="newPlanAction" Placeholder="Plan d'action" TextColor="Black" BackgroundColor="White" PlaceholderColor="Black" HorizontalOptions="FillAndExpand" HeightRequest="100" VerticalOptions="Center"/>
+
+
+                        </ViewCell>
+                                    
+                                    
+                                    
+                                    
+                                    <ViewCell Height="55">
+                                        <StackLayout Orientation="Horizontal">
+                                    <DatePicker x:Name="newDateEcheance" TextColor="White"
+                            HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+                                    <Entry x:Name="newSuivi" Placeholder="Suivi" TextColor="White" PlaceholderColor="White" HorizontalOptions="FillAndExpand" HeightRequest="100" VerticalOptions="Center"/>
+                                </StackLayout>
+                                    </ViewCell>
+                                    
+                        <ViewCell Height="50">
+                        <Button Clicked="newRubriqueButtonClicked"  Text = " Nouvelle Rubrique "  BackgroundColor = "Red"  TextColor = "White" HeightRequest = " 45 "  WidthRequest = " 45 " CornerRadius = " 30 " />
+                        </ViewCell>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                           
+                            
+                                </TableSection>
+
+                            </TableView>
+                </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+        </ScrollView>
+        <StackLayout Margin="20">
+            <Button Clicked="OnNextPageButtonClicked"  Text = " Suivant "  BackgroundColor = "White"  TextColor = "Black" HeightRequest = " 45 "  WidthRequest = " 45 " CornerRadius = " 30 " />
+
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
